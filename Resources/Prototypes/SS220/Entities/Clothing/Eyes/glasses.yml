@@ -208,3 +208,29 @@
     nameEntries:
     - [SyndicateAgentKnowledge, null]
     - [ServiceActorKnowledge, null]
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesMedical
+  name: GlassesMedHUD
+  description: Upgraded sunglasses that provide flash immunity and a medical HUD.
+  components:
+  - type: Sprite
+    sprite: SS220/Clothing/Eyes/Glasses/medhud_glasses.rsi
+  - type: Clothing
+    sprite: SS220/Clothing/Eyes/Glasses/medhud_glasses.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological

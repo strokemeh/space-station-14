@@ -1,0 +1,26 @@
+#© SS220, An EULA/CLA with a hosting restriction, full text: https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/CLA.txt
+- type: constructionGraph
+  id: GlassesMedHUD
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: glassesMed
+          steps:
+            - tag: HudMedical
+              name: construction-graph-tag-medical-hud
+              icon:
+                sprite: Clothing/Eyes/Hud/med.rsi
+                state: icon
+              doAfter: 5
+            - tag: Sunglasses
+              name: construction-graph-tag-sun-glasses
+              icon:
+                sprite: Clothing/Eyes/Glasses/sunglasses.rsi
+                state: icon
+              doAfter: 5
+            - material: Cable
+              amount: 5
+              doAfter: 5
+    - node: glassesMed
+      entity: ClothingEyesGlassesMedical

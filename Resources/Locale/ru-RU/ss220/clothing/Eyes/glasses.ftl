@@ -38,3 +38,6 @@ ent-ClothingEyesVisorNinjaFake = { ent-ClothingEyesVisorNinja }
 
 ent-ClothingEyesHudMediChem = химико-медицинские очки
     .desc = Имеют поразительное сходство с очками из кинотеатра.
+
+ent-ClothingEyesGlassesMedical = Медицинские солнцезащитные очки
+    .desc = Модернизированные солнцезащитные очки с функцией медсканера и защитой от вспышек
